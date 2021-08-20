@@ -1,0 +1,107 @@
+*{
+    margin:0px;
+    padding:0px;
+
+}
+
+body{
+    overflow: hidden;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Acme', sans-serif;
+}
+button{
+    color: darkblue;
+    background-color: darkred;
+}
+#btnBlanco{
+    color: chocolate;
+    background-color: white;    
+    font-weight: bold;
+    width: 200px;
+    height: 40px;
+    border: 2px dashed #01070A;
+    padding: 5px;
+    border-radius: 20px;
+}    
+
+#btnBlanco:hover{
+    background-color: darkblue;
+    color: white;
+    border-radius: 0px;
+    cursor:pointer;
+}
+.bolita{
+    border: 2px solid #01070A;
+    width: 50px;
+    height: 50px;
+    background-color: whitesmoke;
+    float: left;
+    border-radius: 50%;
+}
+#imagen, #formulario{
+    float:left;
+    height: 100vh;
+    background-color: whitesmoke;
+}   
+#imagen{
+    /* otra opcion para acceder a la imagen puede ser url(./../img/fondo.jpg) */
+    background-image: url(./img/fondo.jpg);
+    width:70%;
+    background-size: 50% 100%;
+    background-position: 0% 0%;
+}
+#formulario{
+    background-color: #E6E6E6;
+    width:30%;
+    padding-top: 50px;
+    text-align: right;
+} 
+#formulario>h1{
+    padding-right: 10%;
+    font-size: 2.5rem;/* 1rem => 16px es relativo a la resolucion de la pantalla del dispositivo*/
+    color: blue;
+}
+#formulario>h2{
+    padding-right: 10%;
+    font-size: 1.5rem;
+}
+#formulario>form{
+    background-color: deepskyblue;
+    width: 80%;
+    margin:30px auto;
+    text-align: left;
+}
+#formulario>form>fieldset{
+    padding:5px;
+    border: none;
+    margin-top:5px;
+}
+#formulario>form>fieldset>lable{
+    display: block; /* manera de que un texto se comporte como caja */
+}
+#formulario>form>fieldset>input{
+    display: block;
+    width: 95%;
+    height:30px;
+    padding:5px;
+    border: none;
+    background-color:azure;
+    border-radius: 5px;
+}
+#formulario>form>fieldset>button{
+    width:100px;
+    height:30px;
+    border:none;
+    background-color: azure;
+    color:deepskyblue;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+#formulario>form>fieldset>a{
+    text-decoration: none;
+    color: azure;
+    float: right;
+}

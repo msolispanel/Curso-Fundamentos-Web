@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="./css/estiloslogin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body style="background-color:#E6E6E6">
+    <div id="imagen"></div>
+    <div id="formulario">
+        <h1>Bienvenidos</h1>
+        <h2>Registrarse</h2>
+        <form action="">
+            <fieldset>
+                <label for="txtNombre">Nombre</label>
+                <input required type="text" id="txtNombre" placeholder="Introduce tu Nombre Completo">
+            </fieldset>
+            <fieldset>
+                <label for="txtDireccion">Dirección</label>
+                <input required type="text" id="txtDireccion" placeholder="Introduce tu Dirección">
+            </fieldset>
+            <fieldset>
+                <label for="txtTel">Teléfono</label>
+                <input required type="tel" id="txtTel" placeholder="Introduce tu Teléfono 636-XXX-XXXX" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            </fieldset>
+            <fieldset>
+                <label for="txtEmail">Email</label>
+                <input required type="email" id="txtEmail" placeholder="Introduce tu Email">
+            </fieldset>
+            <fieldset>
+                <label for="txtPassword">Password</label>
+                <input required type="password" id="txtPassword" placeholder="Introduce tu Password">
+            </fieldset> 
+            <fieldset>
+                <label for="txtPasswordConfirm">Confirmar Password</label>
+                <input required type="password" id="txtPasswordConfirm" placeholder="Introduce tu Password de Nuevo para Confirmar">
+            </fieldset> 
+            <fieldset>
+                <button>Registrarse</button>
+                <a href="./login.html">Login</a>
+            </fieldset>
+        </form>
+
+    </div>
+    
+
+</body>
+</html>

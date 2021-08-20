@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    
+
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <h2>Dashboard</h2>
+        </div>
+        <div id="user">
+            <h5>
+                <img src="./css/img/user.jpg" alt="">
+                Mauricio Solis
+            </h5>
+        </div>
+    </header>
+    <aside>
+        <nav>
+            <ul>
+                <li>
+                    <a href=""><i class="fa fa-home"></i>Inicio</a>
+                </li>
+                <li>
+                    <a href=""><i class="fa fa-shopping-cart"></i>Productos</a>
+                </li>
+                <li>
+                    <a href=""><i class="fa fa-users"></i>Usuarios</a>
+                </li>
+                <li>
+                    <a href=""><i class="fa fa-arrow-left"></i>Salir</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <div id="container">
+            <h1>Bienvenidos</h1>
+            <button class="btn oculto">Primario</button>
+            <button class="btn danger oculto">Danger</button>
+            <button class="btn warning oculto">Warning</button>
+            <button class="btn oculto">Alternativo</button>
+            <br>
+            <input type="number" placeholder="Introduce tu Edad" id="txtEdad" min="1" max="150">
+            <button class="btn" onclick="calcular()">Calcular</button>
+            <h5 id="lblResultado"></h5>
+            <div id="Resultado"></div>
+        </div>
+        <footer>
+            Todos los derechos reservados 2021
+        </footer>
+    </main>
+    <script>
+        function calcular(){
+            var campo = document.getElementById("txtEdad");
+            var valor = campo.value;
+            if(valor<18){
+                /*console.log("Eres Menor de Edad");*/ /*Es la manera de visualizar valores al inspeccionar codigo*/
+                document.getElementById("lblResultado").innerHTML="Eres Menor de Edad";
+            }
+            else if(valor>18){
+               /* console.log("Eres Mayor de Edad");*/
+                document.getElementById("lblResultado").innerHTML="Eres Mayor de Edad";
+            }
+            else{
+                /*console.log("Saca tu IFE");*/
+                document.getElementById("lblResultado").innerHTML="Saca tu IFE";
+            }// lave del else
+            var todo="";
+            for(var x=0;x<valor;x++){
+                todo=todo+"<button>HOLA</button>";
+            }
+            document.getElementById("Resultado").innerHTML=todo;
+         }// llave de la function
+    </script>
+</body>
+</html>
